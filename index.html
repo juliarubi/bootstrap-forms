@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <title>University of Florida Quiz</title>
+  <!-- your CSS stylesheet -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+</head>
+<!-- HEAD element closes above -->
+
+
+<body>
+<div class="container">
+
+  <div class="row">
+
+    <div class="col-md-8">
+
+  <h1>University of Florida Quiz: <small>With Bootstrap 4 form styles</small></h1>
+  <p>This quiz will test your knowledge about the University of Florida, and provide you with fun facts about the school!<p>
+  <p><small>Information for this quiz was provided by: <a href="https://en.wikipedia.org/wiki/University_of_Florida"target="_blank">Wikipedia</a></small></p>
+
+<form>
+  <!--text field questions -->
+  <div class="form-group">
+    <label class="form-control-label" for="questionOne">What year was UF Established?</label>
+      <input class="form-control" type="text" name="ufEstablished" id="questionOne" placeholder="Your answer here">
+  </div>
+
+  <div class="form-group">
+    <label class="form-control-label" for="questionTwo">In what city is UF located?</label>
+      <input class="form-control" type="text" name="ufLocation" id="questionTwo" placeholder="Your answer here">
+  </div>
+
+<!-- textarea -->
+  <div class="form-group">
+    <label class="form-control-label" for="nameChange">What was the University of Florida originally named, and why did the name change?</label>
+    <textarea class="form-control" id="nameChange" name="longresponse" rows="4" placeholder="Type your response here"></textarea>
+    </div>
+
+<!-- radio buttons -->
+<div class="form-group">
+  <label>Among top public universities in the United States, what is the University of Florida ranked? <small>(choose only one)</small></label>
+
+  <div class="form-check">
+    <label class="form-check-label">
+      <input class="form-check-input" type="radio" name="ranking" value="fifteenth"> 15th
+      </label>
+  </div> <!-- form check -->
+
+  <div class="form-check">
+    <label class="form-check-label">
+      <input class="form-check-input" type="radio" name="ranking" value="fourth"> 4th
+      </label>
+  </div> <!-- form check -->
+
+  <div class="form-check">
+    <label class="form-check-label">
+      <input class="form-check-input" type="radio" name="ranking" value="fifth"> 5th
+      </label>
+  </div> <!-- form check -->
+
+  <div class="form-check">
+    <label class="form-check-label">
+      <input class="form-check-input" type="radio" name="ranking" value="third"> 3rd
+      </label>
+  </div> <!-- form check -->
+  </div>
+
+<!-- checkboxes do what are the school colors -->
+<div class="form-group">
+  <label>What are the school's colors? <small>(check all that apply)</small></label>
+
+  <div class="form-check"
+    <label class="form-check-label">
+      <input class="form-check-input" type="checkbox" name="color" value="blue"> Blue
+      </label>
+  </div> <!-- form check -->
+
+  <div class="form-check"
+    <label class="form-check-label">
+      <input class="form-check-input" type="checkbox" name="color" value="red"> Red
+      </label>
+  </div> <!-- form check -->
+
+  <div class="form-check"
+    <label class="form-check-label">
+      <input class="form-check-input" type="checkbox" name="color" value="Orange"> Orange
+      </label>
+  </div> <!-- form check -->
+
+  <div class="form-check"
+    <label class="form-check-label">
+      <input class="form-check-input" type="checkbox" name="color" value="Green"> Green
+      </label>
+  </div> <!-- form check -->
+</div>
+
+
+<!-- drop down menu -->
+<div class="form-group">
+  <label for="mascot">Which animal is the UF mascot?</label>
+  <select class="form-control" id="animaltype" name="mascot">
+    <option>Choose one</option>
+    <option value="lion">Lion</option>
+    <option value="gator">Gator</option>
+    <option value="elephant">Elephant</option>
+    <option value="panther">Panther</option>
+    <option value="bulldog">Bull Dog</option>
+    <option value="wildcat">Wildcat</option>
+  </select>
+</div>
+
+<!-- submit button -->
+<input class="btn btn-primary" type="button" value="Submit Answers">
+<input class="btn btn-secondary" type="button" value="Start Over">
+
+<!-- reset button -->
+
+</form>
+
+</div> <!-- end column -->
+  </div> <!-- end row -->
+    </div> <!-- end container -->
+
+
+</body>
+</html>
